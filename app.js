@@ -40,7 +40,7 @@ app.post('/', (req, res) => {
       console.log(timeStamp);
       res.write('<h1>' + cryptoCurrency + '/' + currency + '</h1>');
       res.write('<p>' + timeStamp + '</p>');
-      res.write('<p>' + ask + '</p>');
+      res.write('<p>' + last + '</p>');
       res.send();
     });
   });
@@ -51,5 +51,5 @@ app.post('/', (req, res) => {
 //YTU1OGYwZTYxYTE5NDEzMmE3NmU5ODNhZjdlYzIzMDY // API Key
 
 app.listen(3000, () => {
-  console.log("Server started on port 3000");
+  console.log('Server started on port 3000');
 });
